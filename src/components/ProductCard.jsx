@@ -10,7 +10,9 @@ const ProductCard = ({ product }) => {
         <p>${price.toFixed(2)}</p>
       </div>
       <div className="m-4 space-x-2">
-        <Link className="btn btn-secondary">View Details</Link>
+        <Link className="btn btn-secondary" to={`/product/${product.id}`}>
+          View Details
+        </Link>
         <button className="btn btn-primary">Add to Cart</button>
       </div>
     </div>
